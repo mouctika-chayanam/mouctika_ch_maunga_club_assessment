@@ -1,0 +1,141 @@
+html, body {
+    padding:0;
+    margin:0;
+    height:100%;
+  }
+  
+body {
+    background-color: aliceblue;
+    background-image:url("/images/mountain_view_dark.jpg");
+    background-size: cover;
+}
+    
+p1 {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style:italic;
+    font-size:small;
+    color:white;
+    }
+    
+p2 {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style:normal;
+    font-size:large;
+    color:white;
+  }
+    
+p3 {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style:italic;
+    font-size:small;
+    color:white;
+  }
+    
+h1 {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: bold;
+    font-size: xx-large;
+    color: white;
+  }
+    
+h2 {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: bold;
+    font-size: large;
+    color: white;
+  }
+     
+h3 {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style:bold;
+    font-size:large;
+    color:white;
+  }
+    
+.logo {
+    margin-top:0.5vw;
+    padding:0.3vw;
+  }
+    
+nav {
+    background-color: rgba(100, 206, 250, 0.2);
+    display:flex;
+    align-items:center;
+    top:0;
+    /* justify-content:space-evenly; */
+  }
+    
+nav img {
+    padding-left:2vw;
+    width:15vw;
+  }
+    
+nav ul {
+    list-style-type: none; /* removes bullet point */
+    margin:0;
+    padding:0;
+  }
+    
+nav li {
+    /* outline:2px solid red; */
+    display:inline-block;
+    padding:1vw;
+    justify-content:space-around;
+  }
+    
+nav li a {
+    color:white;
+    padding: 14px;
+    text-decoration:none;
+    background-color: darkblue;
+    border:2px solid white;
+  }
+  
+.become_member {
+    outline:2px solid lightblue;
+    height:40%;
+    text-align:center;
+    padding-top:1.5vw;
+}
+
+.splash_text {
+    outline:2px solid yellow;
+    width:50%;
+    margin-left:auto;
+    margin-right:auto;
+    height:40%;
+}
+
+.benefits {
+    margin-top:2vw;
+    outline:2px solid pink;
+    width:50%;
+    margin-left:auto;
+    margin-right:auto;
+    height:40%;
+}
+
+.booking {
+    outline:2px solid lightblue;
+    height:40%;
+    display:flex;
+    text-align:center;
+}
+
+.booking_form {
+    margin-top:2vw;
+    outline:2px solid yellow;
+    width:40%;
+    margin-left:auto;
+    margin-right:auto;
+    height:80%;
+}
+
+.email_details {
+    margin-top:2vw;
+    outline:2px solid pink;
+    width:40%;
+    margin-left:auto;
+    margin-right:auto;
+    height:80%;
+}

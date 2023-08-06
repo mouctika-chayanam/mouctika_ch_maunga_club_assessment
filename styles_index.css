@@ -1,0 +1,167 @@
+html, body {
+  padding:0;
+  margin:0;
+}
+
+body {
+  background-color: aliceblue;
+}
+  
+p1 {
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-style:italic;
+  font-size:small;
+  color:black;
+  }
+  
+p2 {
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-style:normal;
+  font-size:large;
+  color:black;
+}
+  
+p3 {
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-style:italic;
+  font-size:small;
+  color:white;
+}
+  
+h1 {
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-style: bold;
+  font-size: xx-large;
+  color: black;
+}
+  
+h2 {
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-style: bold;
+  font-size: xx-large;
+  color: white;
+}
+   
+h3 {
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-style:bold;
+  font-size:large;
+  color:black;
+}
+  
+.logo {
+  margin-top:0.5vw;
+  padding:0.3vw;
+}
+  
+nav {
+  background-color: rgba(100, 206, 250, 0.2);
+  display:flex;
+  align-items:center;
+  top:0;
+  /* justify-content:space-evenly; */
+}
+  
+nav img {
+  padding-left:2vw;
+  width:15vw;
+}
+  
+nav ul {
+  list-style-type: none; /* removes bullet point */
+  margin:0;
+  padding:0;
+}
+  
+nav li {
+  /* outline:2px solid red; */
+  display:inline-block;
+  padding:1vw;
+  justify-content:space-around;
+}
+  
+nav li a {
+  color:white;
+  padding: 14px;
+  text-decoration:none;
+  background-color: darkblue;
+  border:2px solid white;
+}
+
+.header-image{
+  display:flex;
+  flex-direction: column;
+  background-image: url("/images/mountain_view_light.jpg");
+  height:80vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:cover;
+  text-align:center;
+}
+  
+.banner {
+  /* outline:2px solid yellow; */
+  justify-content:center;
+  display:flex;
+  flex-direction:column;
+  height:20vh;
+  margin-top:auto;
+  margin-bottom:11vh;
+  background-color: rgba(0, 0, 111, 0.5); /* can get rid of bg color if looks better */
+}
+
+.header-image h1 {
+  font-size:3vw;
+}
+
+/* style li (list items) rather than ul. ul is the container for the buttons */
+.banner li {
+  display:inline;
+  align-items:center;
+  width: 5.3vw;
+  height: 2.5vw;
+  margin: 1vw;
+  background-color: lightblue;
+  padding: 1vw;
+  border:2px solid white;
+} /* this styles all the buttons the same because you're styling line items */
+
+.information {
+  outline:2px solid purple;
+  margin-left:auto;
+  margin-right:auto;
+  text-align:center;
+  width:50vw;
+  height:7vw; 
+}
+
+.join {
+  outline:2px solid blue;
+  margin-left:auto;
+  margin-right:auto;
+  text-align:center;
+  width:100%;
+  height:7.5vw;
+}
+
+.join ul {
+  list-style-type: none; /* removes bullet point */
+  margin:0;
+  padding:0;
+}
+  
+.join li {
+  /* outline:2px solid red; */
+  display:inline-block;
+  padding:1vw;
+}
+  
+.join li a {
+  color:white;
+  padding: 14px;
+  text-decoration:none;
+  background-color: darkblue;
+  border:2px solid white;
+  font-size:x-large;
+  border:2px solid white;
+}
