@@ -8,7 +8,7 @@
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
     <title>Join The Club!</title>
     <link rel="stylesheet" href="styles_join_club.css">
-    <link rel="styles" href="styles.js">
+    <script src="styles.js"></script>
 
 <nav>
     <div class="logo">
@@ -28,58 +28,69 @@
 <body>
     <section class="become_member">
         <div class="splash_text">
-            <h2> Become A Member! </h2>
-        </div>
-        
-        <div class="benefits">
-            <h2> benefits and features </h2>
+            <h1> Become A Member! </h1>
+            <h2> Unlock exclusive access to our chalets! Join Maunga Club today. </h2>
         </div>
     </section>
 
 <section class="booking">
     <div class="booking_form">
         <form>
-            <div class="form_container">
-            <h2>Join Maunga Club today!</h2>
+        <div class="form_container">
+            <h1>Join Maunga Club today!</h1>
+            <label for="FullName"
+            class="full-name"> Full Name </label>
             <input
                 id="FullName"
                 type="text"
                 placeholder="Full name"
                 name="name"
             />
+            <label for="Address"
+            class="address"> Address </label>
             <input
                 id="Address"
                 type="text"
                 placeholder="Physical address"
                 name="name"
             />
+            <label for="AddressProof"
+            class="address-proof"> Proof of Address </label>
             <input
                 id="AddressProof"
                 type="file"
                 placeholder="Upload proof of address"
                 name="AddressProof"
                 />
+            <label for="IDProof"
+            class="id-proof"> ID Proof </label>
             <input
                 id="IDProof"
                 type="file"
                 placeholder="Upload proof of ID"
                 name="IDProof"
             />
-            <input id="submit" type="submit" />
-            </div>
-            </form>
-    </div>
+            <button class="submit" onclick="myFunction()"> Submit Details </button>
+            <script>
+                function myFunction() {
+                  alert("Details submitted.");
+                }
+                </script>
+        </div>
+    </form>
+</div>
     <div class="email_details">
-        <h1> Alternatively, email us your details. </h1>
+        <h1> Alternatively, email us your details. </h1> 
+        <h2> Email us with the following and we'll get back to you soon. Membership will be confirmed via email.</h2>
         <h2> 
-            <ul>
-                <li> Full Name </li>
-                <li> Physical Address </li>
-                <li> Address Proof (PDF) </li>
-                <li> ID Proof (PDF) </li>
-            </ul>
-            <button> email </button>
+            Full Name <br> <!-- break line -->
+            Physical Address <br>
+            Address Proof (PDF, eg, power bill) <br>
+            ID Proof (PDF, driver's license or passport) <br>
+            <button> <li> <a href="mailto:maungaclub@maungaclub.maungaclub"> Email Us </a> </li>  </button>
         </h2>
     </div>
 </section>
+
+
 </body>

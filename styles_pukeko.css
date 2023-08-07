@@ -90,6 +90,9 @@ nav li a {
     border:2px solid white;
   }
   
+nav ul li a:hover {
+  color:lightblue;
+}
 .header-image{
     display:flex;
     flex-direction: column;
