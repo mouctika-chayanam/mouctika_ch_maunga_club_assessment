@@ -45,12 +45,6 @@ h2 {
     color: white;
   }
      
-h3 {
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-style:bold;
-    font-size:large;
-    color:white;
-  }
     
 .logo {
     margin-top:0.5vw;
@@ -115,27 +109,77 @@ nav li a {
     height:40%;
 }
 
-.booking {
+.booking { /* this whole thing is the bottom container */
     outline:2px solid lightblue;
     height:40%;
     display:flex;
     text-align:center;
+
 }
 
 .booking_form {
     margin-top:2vw;
     outline:2px solid yellow;
-    width:40%;
-    margin-left:auto;
-    margin-right:auto;
+    width:50%;
+    margin-left:2vw;
+    margin-right:2vw;
     height:80%;
+    
 }
 
 .email_details {
     margin-top:2vw;
     outline:2px solid pink;
-    width:40%;
-    margin-left:auto;
-    margin-right:auto;
+    width:50%;
+    margin-left:2vw;
+    margin-right:2vw;
     height:80%;
+}
+
+form {
+  /* margin-top: 20rem; */ /* better to comment out a line than delete it */
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height:100%;
+}
+
+
+.form_container #FullName,
+.form_container #Address,
+.form_container #IDProof,
+.form_container #AddressProof {
+  padding: 0.5rem;
+  width: 20%;
+  border-top: 1vw;
+  border-left: 1vw;
+  border-right: 1vw;
+  border-bottom: 5px #000 solid;
+  border-radius: 4px;
+  background-color: transparent;
+  color: white;
+}
+
+.form_container #FullName::placeholder,
+.form_container #Address::placeholder,
+.form_container #IDProof::placeholder,
+.form_container #AddressProof::placeholder {
+  color: pink;
+}
+
+.form_container #submit {
+  width: 80%;
+  height: 2rem;
+  color: pink;
+  background-color: transparent;
+  border: 3px pink solid;
+  margin-left: 6%;
+  margin-top: 1rem;
+  transition: all 0.3s ease 0s;
+}
+
+.form_container #submit:hover {
+  opacity: 0.5s;
+  cursor: pointer;
 }

@@ -8,6 +8,7 @@
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
     <title>Join The Club!</title>
     <link rel="stylesheet" href="styles_join_club.css">
+    <link rel="styles" href="styles.js">
 
 <nav>
     <div class="logo">
@@ -34,12 +35,51 @@
             <h2> benefits and features </h2>
         </div>
     </section>
-    <section class="booking">
-        <div class="booking_form">
-            <h2> booking form </h2>
-        </div>
-        <div class="email_details">
-            <h2> email us details </h2>
-        </div>
-    </section>
+
+<section class="booking">
+    <div class="booking_form">
+        <form>
+            <div class="form_container">
+            <h2>Join Maunga Club today!</h2>
+            <input
+                id="FullName"
+                type="text"
+                placeholder="Full name"
+                name="name"
+            />
+            <input
+                id="Address"
+                type="text"
+                placeholder="Physical address"
+                name="name"
+            />
+            <input
+                id="AddressProof"
+                type="file"
+                placeholder="Upload proof of address"
+                name="AddressProof"
+                />
+            <input
+                id="IDProof"
+                type="file"
+                placeholder="Upload proof of ID"
+                name="IDProof"
+            />
+            <input id="submit" type="submit" />
+            </div>
+            </form>
+    </div>
+    <div class="email_details">
+        <h1> Alternatively, email us your details. </h1>
+        <h2> 
+            <ul>
+                <li> Full Name </li>
+                <li> Physical Address </li>
+                <li> Address Proof (PDF) </li>
+                <li> ID Proof (PDF) </li>
+            </ul>
+            <button> email </button>
+        </h2>
+    </div>
+</section>
 </body>
