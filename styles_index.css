@@ -4,7 +4,7 @@ html, body {
 }
 
 body {
-  background-color: aliceblue;
+  background-color: lightcyan;
 }
   
 p1 {
@@ -59,6 +59,7 @@ nav {
   display:flex;
   align-items:center;
   top:0;
+  position:fixed;
   /* justify-content:space-evenly; */
 }
   
@@ -131,7 +132,7 @@ nav ul li a:hover {
 } /* this styles all the buttons the same because you're styling line items */
 
 .information {
-  outline:2px solid purple;
+  /* outline:2px solid purple; */
   margin-left:auto;
   margin-right:auto;
   text-align:center;
@@ -139,33 +140,76 @@ nav ul li a:hover {
   height:7vw; 
 }
 
+.information h2 {
+  color:black;
+  font-size:x-large;
+}
+
 .join {
-  outline:2px solid blue;
+  /* outline:2px solid blue; */
   margin-left:auto;
   margin-right:auto;
   text-align:center;
   width:100%;
-  height:7.5vw;
+  margin-top:-2vw;
+
 }
 
-.join ul {
-  list-style-type: none; /* removes bullet point */
-  margin:0;
-  padding:0;
+.chalet_images {
+  display:flex;
+  margin-top:-5vw;
 }
-  
-.join li {
-  /* outline:2px solid red; */
-  display:inline-block;
-  padding:1vw;
-}
-  
-.join li a {
-  color:white;
-  padding: 14px;
+
+.chalet_images a {
   text-decoration:none;
-  background-color: darkblue;
-  border:2px solid white;
-  font-size:x-large;
-  border:2px solid white;
+}
+
+.kakapo_image {
+  /* outline:2px solid blue; */
+  width:40%;
+  text-align:center;
+  margin-left:2vw;
+  height:15vw;
+  margin-top:3vw;
+}
+
+.kakapo_image img {
+  height:100%;
+  width:100%;
+  object-fit:cover;
+}
+
+.pukeko_image {
+  /* outline:2px solid blue; */
+  width:40%;
+  text-align:center;
+  margin-left:2vw;
+  height:15vw;
+  margin-top:3vw;
+}
+
+.pukeko_image img {
+  height:100%;
+  width:100%;
+  object-fit:cover;
+}
+
+.kereru_image {
+  /* outline:2px solid blue; */
+  width:40%;
+  text-align:center;
+  margin-left:2vw;
+  height:15vw;
+  margin-top:3vw;
+}
+
+.kereru_image img {
+  height:100%;
+  width:100%;
+  object-fit:cover;
+}
+
+.footer {
+  margin-top:6vw;
+  text-align:center;
 }

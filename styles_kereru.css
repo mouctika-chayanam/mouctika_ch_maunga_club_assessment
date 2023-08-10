@@ -58,9 +58,9 @@ h3 {
     
 nav {
   background-color: rgba(100, 206, 250, 0.2);
-  display:flex;
   align-items:center;
   top:0;
+  display:flex;
   /* justify-content:space-evenly; */
 }
     
@@ -73,6 +73,7 @@ nav ul {
   list-style-type: none; /* removes bullet point */
   margin:0;
   padding:0;
+
 }
     
 nav li {
@@ -146,4 +147,8 @@ nav ul li a:hover {
     text-align:center;
     margin-top:4vw;
     height:50%;
+}
+
+.gallery {
+  align-items:center;
 }
