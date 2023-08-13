@@ -13,14 +13,14 @@ p1 {
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-style:italic;
   font-size:small;
-  color:black;
+  color:white;
   }
   
 p2 {
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-style:normal;
   font-size:large;
-  color:black;
+  color:white;
 }
   
 p3 {
@@ -34,79 +34,78 @@ h1 {
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-style: bold;
   font-size: xx-large;
-  color: black;
+  color: white;
 }
   
 h2 {
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-style: bold;
-  font-size: xx-large;
+  font-size: large;
   color: white;
 }
    
-h3 {
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-style:bold;
-  font-size:large;
-  color:black;
-}
 
 /* navigation */ 
 .logo {
-  margin-top:0.5vw;
+  /* outline:2px solid green; */
   padding:0.3vw;
+  position:sticky;
+}
+
+.logo img {
+  /* outline:2px solid blue; */
+  width:20vw;
+  margin-bottom:-3vw;
+  margin-top:0.5vw;
 }
   
 nav {
   background-color: rgba(100, 206, 250, 0.2);
   display:flex;
   align-items:center;
-  top:0;
+  flex-direction: column;
+  /* top:0; */
   /* position:fixed; */
-  justify-content:space-between;
 }
 
-/* .links {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 80%;
-} */
-  
-nav img {
-  padding-left:2vw;
-  width:15vw;
-}
-  
 nav ul {
+  /* outline:2px solid blue; */
   list-style-type: none; /* removes bullet point */
-  margin:0;
   padding:0;
+  margin-left:auto;
+  margin-right:auto;
+  margin-bottom:0.5vw;
+  margin-top:2vw;
 }
   
 nav li {
   /* outline:2px solid red; */
   display:inline-block;
   padding:1vw;
-  /* justify-content:space-around; */
+  margin-right:7vw;
+  margin-left:7vw;
 }
   
 nav li a {
-  color:white;
-  padding: 14px;
+  /* padding: 14px; */
+  /* background-color: darkblue; */
+  /* border:2px solid white; */
+  padding:7px;
+  color:seagreen;
   text-decoration:none;
-  background-color: darkblue;
-  border:2px solid white;
+  font-size:28px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 nav ul li a:hover {
-  color:lightblue;
+  color:lightskyblue;
 }
+
 /* index page */
 .header-image{
   display:flex;
   flex-direction: column;
-  background-image: url("/images/mountain_view_light.jpg");
+  background-image: url("mountain_view_light.jpg");
   height:80vh;
   background-position: center;
   background-repeat: no-repeat;
@@ -127,6 +126,7 @@ nav ul li a:hover {
 
 .header-image h1 {
   font-size:3vw;
+  color:black;
 }
 
 /* style li (list items) rather than ul. ul is the container for the buttons */
@@ -148,6 +148,7 @@ nav ul li a:hover {
   text-align:center;
   width:50vw;
   height:7vw; 
+  margin-bottom:3vw;
 }
 
 .information h2 {
@@ -161,17 +162,28 @@ nav ul li a:hover {
   margin-right:auto;
   text-align:center;
   width:100%;
-  margin-top:-2vw;
+  margin-top:-3vw;
+  margin-bottom:2vw;
+}
 
+.join h1 {
+  color:black;
 }
 
 .chalet_images {
+  outline:2 px solid blue;
+  margin-right:auto;
+  margin-left:auto;
   display:flex;
   margin-top:-5vw;
 }
 
 .chalet_images a {
   text-decoration:none;
+}
+
+.chalet_images h2 {
+  color:black;
 }
 
 .kakapo_image {
@@ -220,8 +232,16 @@ nav ul li a:hover {
 }
 
 .footer {
-  margin-top:6vw;
+  margin-top:4vw;
   text-align:center;
+}
+
+.footer p1 {
+  font-size:medium;
+}
+
+.footer p1 {
+  color:black;
 }
 
 /* chalet pages */
