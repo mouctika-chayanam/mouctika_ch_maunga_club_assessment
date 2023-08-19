@@ -4,120 +4,118 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
     <title>Join The Club!</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-image: url("mountain_view_dark.jpg");
+            background-repeat:no-repeat;
+            background-size:cover;
+        }
+    </style>
 </head>
 
-<link rel="stylesheet" href="styles.css">
-<style>
-    body {
-        background-image: url("mountain_view_dark.jpg");
-        background-repeat:no-repeat;
-        background-size:cover;
-    }
-</style>
-
-<nav>
-    <div class="logo">
-        <a href="index.html"> <img src="Maunga_Club_white.png"></a>
-    </div>
-
-        <ul>
-            <li><a href="kakapo.html"> Kākāpo </a></li> 
-            <li><a href="pukeko.html"> Pūkeko </a></li>
-            <li><a href="kereru.html"> Kererū </a></li>
-            <li><a href="join_club.html"> Join Us! </a></li>
-        </ul>
-</nav>
-
 <body>
-<section class="become_member">
-    <div class="splash_text">
-        <h1> Become A Member! </h1>
-        <h2> Unlock exclusive access to our chalets by joining Maunga Club today! </h2>
-        <h2> Fill in the form below or email us your details.</h2>
-    </div>
-</section>
-
-<section class="booking">
-    <div class="booking_form">
-        <form>
-        <div class="form_container">
-            <!-- <h1>Join Maunga Club today!</h1> -->
-            <label for="FullName"
-            class="full-name"> Full Name </label>
-            <input
-                id="FullName"
-                type="text"
-                placeholder="Full name"
-                name="name"
-            />
-            <label for="Address"
-            class="address"> Address </label>
-            <input
-                id="Address"
-                type="text"
-                placeholder="Physical address"
-                name="name"
-            />
-            <label for="AddressProof"
-            class="address-proof"> Proof of Address </label>
-            <input
-                id="AddressProof"
-                type="file"
-                placeholder="Upload proof of address"
-                name="AddressProof"
-                />
-            <label for="IDProof"
-            class="id-proof"> ID Proof </label>
-            <input
-                id="IDProof"
-                type="file"
-                placeholder="Upload proof of ID"
-                name="IDProof"
-            />
-            <div id="alert">
-                Details submitted.
-            </div>
-            <button class="submit" onclick="myFunction()"> Submit Details </button>
-
-            <script>
-                function myFunction() {
-                  alert("Details submitted.");
-                }
-            </script>
+    <nav>
+        <div class="logo">
+            <a href="index.html"> <img src="Maunga_Club_white.png" alt="logo"></a>
         </div>
-    </form>
-</div>
+    
+            <ul>
+                <li><a href="kakapo.html"> Kākāpo </a></li> 
+                <li><a href="pukeko.html"> Pūkeko </a></li>
+                <li><a href="kereru.html"> Kererū </a></li>
+                <li><a href="join_club.html"> Join Us! </a></li>
+            </ul>
+    </nav>
 
-<hr class="dashed">
-
-<section class="email_details">
-    <!-- <h1> Alternatively, email us your details. </h1>  -->
-    <!-- <h2> Email us with the following and we'll get back to you soon. Membership will be confirmed via email.</h2> -->
-    <div class="to_email">
-        <h2> 
-            Full Name <br> <!-- break line -->
+    <section class="become_member">
+        <div class="splash_text">
+            <h1> Become A Member! </h1>
+            <h2> 
+            Unlock exclusive access to our chalets by joining Maunga Club today!
             <br>
-            Physical Address <br>
-            <br>
-            Address Proof (PDF: eg, power bill) <br> 
-            <br>
-            ID Proof (PDF: driver's license or passport) <br>
+            Fill in the form below or email us your details.
             </h2>
+        </div>
+    </section>
+
+    <section class="booking">
+        <div class="booking_form">
+            <form>
+            <div class="form_container">
+                <!-- <h1>Join Maunga Club today!</h1> -->
+                <label for="FullName"
+                class="full-name"> Full Name </label>
+                <input
+                    id="FullName"
+                    type="text"
+                    placeholder="Full name"
+                    name="name"
+                >
+                <label for="Address"
+                class="address"> Address </label>
+                <input
+                    id="Address"
+                    type="text"
+                    placeholder="Physical address"
+                    name="name"
+                >
+                <label for="AddressProof"
+                class="address-proof"> Proof of Address </label>
+                <input
+                    id="AddressProof"
+                    type="file"
+                    name="AddressProof"
+                >
+                <label for="IDProof"
+                class="id-proof"> ID Proof </label>
+                <input
+                    id="IDProof"
+                    type="file"
+                    name="IDProof"
+                >
+                <div id="alert">
+                    Details submitted.
+                </div>
+                <button class="submit" onclick="myFunction()"> Submit Details </button>
+
+                <script>
+                    function myFunction() {
+                    alert("Details submitted.");
+                    }
+                </script>
+            </div>
+        </form>
     </div>
+
+    <hr class="dashed">
+
+    <div class="email_details">
+        <div class="to_email">
+            <h2> 
+                Full Name <br> <!-- break line -->
+                <br>
+                Physical Address <br>
+                <br>
+                Address Proof (PDF: eg, power bill) <br> 
+                <br>
+                ID Proof (PDF: driver's license or passport) <br>
+                </h2>
+        </div>
             <div class="join_gallery">
-                <a data-fancybox="gallery" href="sample_electric_bill.jpg"><img src="sample_electric_bill.jpg"></a>   
-                <a data-fancybox="gallery" href="sample_driver_license.jpg"><img src="sample_driver_license.jpg"></a>
-                <a data-fancybox="gallery" href="sample_passport.jpg"><img src="sample_passport.jpg"></a>
+                <a data-fancybox="gallery" href="sample_electric_bill.jpg"><img src="sample_electric_bill.jpg" alt="sample_electric_bill"></a>   
+                <a data-fancybox="gallery" href="sample_driver_license.jpg"><img src="sample_driver_license.jpg" alt="sample_driver_license"></a>
+                <a data-fancybox="gallery" href="sample_passport.jpg"><img src="sample_passport.jpg" alt="sample_passport"></a>
             </div>
+            <br>
             <div class="button">
-                <button> <li> <a href="mailto:maungaclub@maungaclub.maungaclub"> Email Us </a> </li>  </button>
+                <h2>
+                    <a href="mailto:maungaclub@maungaclub.maungaclub"> Email Us </a>
+                </h2> 
             </div>
-    </div>
- 
-</section>
-
-
+        </div>
+    </section>
 </body>
