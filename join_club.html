@@ -7,19 +7,22 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"/>
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
     <title>Join The Club!</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-          background-image: url("mountain_view_dark.jpg");
-          background-repeat:no-repeat;
-          background-size:cover;
-        }
-    </style>
+</head>
+
+<link rel="stylesheet" href="styles.css">
+<style>
+    body {
+        background-image: url("mountain_view_dark.jpg");
+        background-repeat:no-repeat;
+        background-size:cover;
+    }
+</style>
 
 <nav>
     <div class="logo">
         <a href="index.html"> <img src="Maunga_Club_white.png"></a>
     </div>
+
         <ul>
             <li><a href="kakapo.html"> Kākāpo </a></li> 
             <li><a href="pukeko.html"> Pūkeko </a></li>
@@ -27,7 +30,6 @@
             <li><a href="join_club.html"> Join Us! </a></li>
         </ul>
 </nav>
-</head>
 
 <body>
 <section class="become_member">
@@ -75,7 +77,11 @@
                 placeholder="Upload proof of ID"
                 name="IDProof"
             />
+            <div id="alert">
+                Details submitted.
+            </div>
             <button class="submit" onclick="myFunction()"> Submit Details </button>
+
             <script>
                 function myFunction() {
                   alert("Details submitted.");

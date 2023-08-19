@@ -9,7 +9,7 @@ body {
 }
 
 /* fonts */ 
-p1 {
+p {
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-style:italic;
   font-size:small;
@@ -232,15 +232,13 @@ nav ul li a:hover {
 }
 
 .footer {
-  margin-top:4vw;
+  margin-top:5vw;
   text-align:center;
+  margin-bottom:2vw;
 }
 
-.footer p1 {
+.footer p {
   font-size:medium;
-}
-
-.footer p1 {
   color:black;
 }
 
@@ -263,12 +261,12 @@ font-size:1.2vw;
   width:40%;
   text-align:center;
   margin-left:2vw;
-  height:15vw;
+  height:20vw;
   margin-top:3vw;
 }
 
 .chalet_image img {
-  height:100%;
+  height:80%;
   width:100%;
   object-fit:cover;
 }
@@ -284,11 +282,12 @@ font-size:1.2vw;
 
 .chalet_gallery {
   /* outline:2px solid purple; */
+  margin-top:-3vw;
+  margin-bottom:2vw;
   width:90%;
   margin-left:auto;
   margin-right:auto;
   text-align:center;
-  margin-top:4vw;
   height:50%;
 }
 
@@ -466,3 +465,4 @@ hr.dashed {
   display:flex;
   padding:2px;
 } */
+
