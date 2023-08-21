@@ -216,13 +216,17 @@ nav ul li a:hover {
   object-fit:cover;
 }
 
-.footer {
+footer {
   margin-top:5vw;
   text-align:center;
-  margin-bottom:2vw;
+  background-color:rgb(132, 177, 193);
+  height:5vw;
+  text-align:center;
+  padding-top:0.5vw;
 }
 
-.footer p {
+
+footer p {
   font-size:medium;
   color:black;
 }
@@ -367,12 +371,13 @@ form {
 .submit { /* submit button */
   width: 80%;
   height: 3vw;
-  color: skyblue;
-  background-color: transparent;
-  border: 3px skyblue solid;
   margin-left: 6%;
   margin-top: 2vw;
   transition: all 0.3s ease 0s;
+  padding-bottom:3vw;
+  color: skyblue;
+  background-color: transparent;
+  border: 3px skyblue solid;
 }
 
 .submit:hover {
@@ -410,12 +415,11 @@ hr.dashed {
   /* outline:4px solid pink; */
   width: 30%;
   height:3vw;
+  margin:auto;
+  transition: all 0.3s ease 0s;
   color: skyblue;
   background-color: transparent;
   border: 3px skyblue solid;
-  margin:auto;
-  /* padding-bottom:1.5px; */
-  transition: all 0.3s ease 0s;
 }
 
 .email_details .button a {
