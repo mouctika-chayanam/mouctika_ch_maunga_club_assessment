@@ -32,13 +32,11 @@ h2 {
 
 /* navigation */ 
 .logo {
-  /* outline:2px solid green; */
   padding:0.3vw;
   position:sticky;
 }
 
 .logo img {
-  /* outline:2px solid blue; */
   width:20vw;
   margin-bottom:-3vw;
   margin-top:0.5vw;
@@ -49,12 +47,9 @@ nav {
   display:flex;
   align-items:center;
   flex-direction: column;
-  /* top:0; */
-  /* position:fixed; */
 }
 
 nav ul {
-  /* outline:2px solid blue; */
   list-style-type: none; /* removes bullet point */
   padding:0;
   margin-left:auto;
@@ -64,7 +59,6 @@ nav ul {
 }
   
 nav li {
-  /* outline:2px solid red; */
   display:inline-block;
   padding:1vw;
   margin-right:7vw;
@@ -72,9 +66,6 @@ nav li {
 }
   
 nav li a {
-  /* padding: 14px; */
-  /* background-color: darkblue; */
-  /* border:2px solid white; */
   padding:7px;
   color:seagreen;
   text-decoration:none;
@@ -99,14 +90,13 @@ nav ul li a:hover {
 }
   
 .banner {
-  /* outline:2px solid yellow; */
   justify-content:center;
   display:flex;
   flex-direction:column;
-  height:20vh;
+  height:25vh;
   margin-top:auto;
   margin-bottom:11vh;
-  background-color: rgba(0, 0, 111, 0.5); /* can get rid of bg color if looks better */
+  background-color: rgba(119, 166, 174, 0.5); /* can get rid of bg color if looks better */
 }
 
 .header-image h1 {
@@ -224,7 +214,6 @@ footer {
   text-align:center;
   padding-top:0.5vw;
 }
-
 
 footer p {
   font-size:medium;
@@ -365,8 +354,6 @@ form {
   display:block;
   margin:auto;
 }
-
-
 
 .submit { /* submit button */
   width: 80%;
