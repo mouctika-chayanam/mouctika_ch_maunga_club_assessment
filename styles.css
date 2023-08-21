@@ -156,7 +156,7 @@ nav ul li a:hover {
 }
 
 .chalet_images {
-  outline:2px solid blue;
+  /* outline:2px solid blue; */
   margin-right:auto;
   margin-left:auto;
   display:flex;
@@ -362,20 +362,27 @@ form {
   margin:auto;
 }
 
+
+
 .submit { /* submit button */
   width: 80%;
-  height: 2rem;
+  height: 3vw;
   color: skyblue;
   background-color: transparent;
   border: 3px skyblue solid;
   margin-left: 6%;
-  margin-top: 1rem;
+  margin-top: 2vw;
   transition: all 0.3s ease 0s;
 }
 
-
 .submit:hover {
   cursor:pointer;
+}
+
+.submit p {
+  font-size:medium;
+  font-style:normal;
+  color:skyblue;
 }
 
 label { /* no dot because its not a class*/ 
@@ -400,13 +407,14 @@ hr.dashed {
 }
 
 .email_details .button {
-  width: 25%;
-  height: 2rem;
+  /* outline:4px solid pink; */
+  width: 30%;
+  height:3vw;
   color: skyblue;
   background-color: transparent;
   border: 3px skyblue solid;
   margin:auto;
-  padding-bottom:1.5px;
+  /* padding-bottom:1.5px; */
   transition: all 0.3s ease 0s;
 }
 
@@ -416,9 +424,9 @@ hr.dashed {
   color:skyblue;
 }
 
-.email_details .button h2 {
-  font-style:italic;
+.email_details .button p {
   font-size:medium;
+  font-style:normal;
 }
 
 .to_email {
