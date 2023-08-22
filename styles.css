@@ -5,10 +5,12 @@ html, body {
 }
 
 body {
-  background-color: lightcyan;
+  background-color: lightcyan; /* setting a consistent colour scheme */
 }
 
 /* fonts */ 
+/* setting all default font colours to white because of the majority of my website being a dark background */
+
 p {
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-style:italic;
@@ -28,12 +30,11 @@ h2 {
   font-size: large;
   color: white;
 }
-   
+
 
 /* navigation */ 
 .logo {
   padding:0.3vw;
-  position:sticky;
 }
 
 .logo img {
@@ -74,13 +75,13 @@ nav li a {
 }
 
 nav ul li a:hover {
-  color:whitesmoke;
+  color:whitesmoke; /* changes the colour of the nav link when the user hovers their mouse, helps in the chalet pages when nav bar is dark */
 }
 
 /* index page */
 .header-image{
   display:flex;
-  flex-direction: column;
+  flex-direction:column;
   background-image: url("mountain_view_light.jpg");
   height:80vh;
   background-position: center;
@@ -96,15 +97,15 @@ nav ul li a:hover {
   height:25vh;
   margin-top:auto;
   margin-bottom:11vh;
-  background-color: rgba(119, 166, 174, 0.5); /* can get rid of bg color if looks better */
+  background-color: rgba(119, 166, 174, 0.5); 
 }
 
 .header-image h1 {
   font-size:3vw;
-  color:black;
+  color:black; /* changing colour to black so that it's visible - default colour is white */
 }
 
-/* style li (list items) rather than ul. ul is the container for the buttons */
+/* styling li (list items) rather than ul. ul is the container for the buttons, li is the actual list item */
 .banner li {
   display:inline;
   align-items:center;
@@ -114,10 +115,9 @@ nav ul li a:hover {
   background-color: lightblue;
   padding: 1vw;
   border:2px solid white;
-} /* this styles all the buttons the same because you're styling line items */
+} /* this styles all the buttons the same because I'm styling line items */
 
 .information {
-  /* outline:2px solid purple; */
   margin-left:auto;
   margin-right:auto;
   text-align:center;
@@ -132,7 +132,6 @@ nav ul li a:hover {
 }
 
 .join {
-  /* outline:2px solid blue; */
   margin-left:auto;
   margin-right:auto;
   text-align:center;
@@ -146,7 +145,6 @@ nav ul li a:hover {
 }
 
 .chalet_images {
-  /* outline:2px solid blue; */
   margin-right:auto;
   margin-left:auto;
   display:flex;
@@ -162,7 +160,6 @@ nav ul li a:hover {
 }
 
 .kakapo_image {
-  /* outline:2px solid blue; */
   width:40%;
   text-align:center;
   margin-left:2vw;
@@ -177,7 +174,6 @@ nav ul li a:hover {
 }
 
 .pukeko_image {
-  /* outline:2px solid blue; */
   width:40%;
   text-align:center;
   margin-left:2vw;
@@ -192,7 +188,6 @@ nav ul li a:hover {
 }
 
 .kereru_image {
-  /* outline:2px solid blue; */
   width:40%;
   text-align:center;
   margin-left:2vw;
@@ -205,6 +200,8 @@ nav ul li a:hover {
   width:100%;
   object-fit:cover;
 }
+
+/* footer */
 
 footer {
   margin-top:5vw;
@@ -235,7 +232,6 @@ font-size:1.2vw;
 }
 
 .chalet_image {
-  /* outline:2px solid blue; */
   width:40%;
   text-align:center;
   margin-left:2vw;
@@ -250,7 +246,6 @@ font-size:1.2vw;
 }
 
 .features {
-  /* outline:2px solid pink; */
   width:40%;
   text-align:center;
   margin-left:2vw;
@@ -259,7 +254,6 @@ font-size:1.2vw;
 }
 
 .chalet_gallery {
-  /* outline:2px solid purple; */
   margin-top:-3vw;
   margin-bottom:2vw;
   width:90%;
@@ -270,24 +264,21 @@ font-size:1.2vw;
 }
 
 .gallery img {
-  /* outline:2px solid white; */
   height:150px;
   margin-left:auto;
   margin-right:auto;
   padding:2px;
 } 
 
-/* join club */
+/* join club page */
 
 .become_member {
-  /* outline:2px solid lightblue; */
   height:20%;
   text-align:center;
   padding-top:1.5vw;
 }
 
 .splash_text {
-  /* outline:2px solid yellow; */
   width:50%;
   margin-left:auto;
   margin-right:auto;
@@ -295,7 +286,6 @@ font-size:1.2vw;
 }
 
 .booking { /* this whole thing is the bottom container */
-  /* outline:2px solid red; */
   height:80%;
   display:flex;
   text-align:center;
@@ -305,7 +295,6 @@ font-size:1.2vw;
 
 .booking_form {
   margin-top:2vw;
-  /* outline:2px solid yellow; */
   width:50%;
   margin-left:2vw;
   margin-right:2vw;
@@ -313,7 +302,6 @@ font-size:1.2vw;
 }
 
 form {
-  /* margin-top: 20rem; */ /* better to comment out a line than delete it */
   width: 100%;
   display: flex;
   align-items: center;
@@ -325,7 +313,6 @@ form {
 .form_container #Address,
 .form_container #IDProof,
 .form_container #AddressProof {
-  /* outline:0.3px solid white; */
   display:flex;
   width: 100%;
   border-top: 1vw;
@@ -357,18 +344,19 @@ form {
 
 .submit { /* submit button */
   width: 80%;
-  height: 3vw;
-  margin-left: 6%;
+  height: 0.5vw;
+  margin-left: 8%;
   margin-top: 2vw;
   transition: all 0.3s ease 0s;
-  padding-bottom:3vw;
+  padding-bottom:2.7vw;
+  padding-top:0vw;
   color: skyblue;
   background-color: transparent;
   border: 3px skyblue solid;
 }
 
 .submit:hover {
-  cursor:pointer;
+  cursor:pointer; /* when the user hovers their mouse over this button, their cursor will change to a selector */
 }
 
 .submit p {
@@ -377,19 +365,17 @@ form {
   color:skyblue;
 }
 
-label { /* no dot because its not a class*/ 
+label {
  color:white;
  font-size:large;
  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 hr.dashed {
-  border: 2px dashed lightblue;
+  border: 2px dashed lightblue; /* the border to separate the form and the list of details to email */
 }
 
 .email_details {
-  /* outline:2px solid green; */
-  /* margin-top:1vw; */
   width:50%;
   margin-left:6vw;
   margin-right:2vw;
@@ -399,10 +385,10 @@ hr.dashed {
 }
 
 .email_details .button {
-  /* outline:4px solid pink; */
   width: 30%;
   height:3vw;
   margin:auto;
+  padding-bottom:0.3vw;
   transition: all 0.3s ease 0s;
   color: skyblue;
   background-color: transparent;
@@ -420,35 +406,24 @@ hr.dashed {
   font-style:normal;
 }
 
+.email_details .button {
+  cursor:pointer;
+}
+
 .to_email {
-  /* outline:2px solid white; */
-  /* width:80%; */
   margin-left:auto;
   margin-right:auto;
 }
 
-/* .button {
-  border:2px solid pink; 
-  margin-top:7.5vw;
-} */
-
 .join_gallery {
-  /* outline:2px solid white; */
   margin-left:auto;
   margin-right:auto;
   margin-top:-0.5vw;
 }
+
 .join_gallery img {
-  /* outline:2px solid white; */
   height:120px;
   margin-left:auto;
   margin-right:auto;
   padding:2px;
-
 } 
-/* .file_uploads {
-  border:2px solid pink;
-  display:flex;
-  padding:2px;
-} */
-
