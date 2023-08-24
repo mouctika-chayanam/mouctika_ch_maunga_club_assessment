@@ -78,6 +78,10 @@ nav ul li a:hover {
   color:whitesmoke; /* changes the colour of the nav link when the user hovers their mouse, helps in the chalet pages when nav bar is dark */
 }
 
+.active {  /* highlights the link of the page that the user is currently on */
+  color:lightcyan;
+}
+
 /* index page */
 .header-image{
   display:flex;
