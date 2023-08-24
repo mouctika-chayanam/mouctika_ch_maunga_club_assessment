@@ -119,7 +119,7 @@ nav ul li a:hover {
   background-color: lightblue;
   padding: 1vw;
   border:2px solid white;
-} /* this styles all the buttons the same because I'm styling line items */
+} /* this styles all the buttons the same because line items are being stylede */
 
 .information {
   margin-left:auto;
